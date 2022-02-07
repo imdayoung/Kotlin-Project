@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinProject">
         <activity
+            android:name=".AddActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MemoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HalligalliActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

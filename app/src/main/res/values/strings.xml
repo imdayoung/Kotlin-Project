@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">KotlinProject</string>
+    <string name="app_name">모두의\n보드게임</string>
+    <string name="mainbutton">시작하기</string>
+    <string name="addbutton">추가하기</string>
 </resources>
