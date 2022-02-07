@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "memo")
 data class MemoEntity(
-    @PrimaryKey(autoGenerate = true)
-    var game : String,
-    var rate : Char,
+    var rate : String = "",
+    @PrimaryKey
+    var game : String = "",
     var memo : String = "")

@@ -2,4 +2,8 @@
     <string name="app_name">모두의\n보드게임</string>
     <string name="mainbutton">시작하기</string>
     <string name="addbutton">추가하기</string>
+    <string name="hintgamename">게임 이름</string>
+    <string name="hintevaluate">총평</string>
+    <string name="hintshortmemo">메모</string>
+    <string name="addtitle">후기 추가하기</string>
 </resources>

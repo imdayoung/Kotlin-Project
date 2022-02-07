@@ -10,10 +10,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val secondIntent = Intent(this, HomeActivity::class.java)
+        val goIntent = Intent(this, MemoActivity::class.java)
 
         startbutton.setOnClickListener {
-            startActivity(secondIntent)
+            startActivity(goIntent)
         }
     }
 }

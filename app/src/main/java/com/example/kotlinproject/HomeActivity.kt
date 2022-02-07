@@ -2,8 +2,6 @@ package com.example.kotlinproject
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.content.Intent
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {
@@ -19,7 +17,7 @@ class HomeActivity : AppCompatActivity() {
 
     private fun initRecycler() {
         gameAdapter = ProfileAdapter(this)
-        games.adapter = gameAdapter
+        homeRecycler.adapter = gameAdapter
 
         datas.apply {
             add(GameData(img=R.drawable.halligalli, name="할리갈리", people="2~7명", time="15분"))

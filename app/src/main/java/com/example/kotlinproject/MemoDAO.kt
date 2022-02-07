@@ -13,7 +13,4 @@ interface MemoDAO {
 
     @Query("SELECT * FROM memo")
     fun getAll() : List<MemoEntity>
-
-    @Delete
-    fun delete(memo : MemoEntity)
 }
