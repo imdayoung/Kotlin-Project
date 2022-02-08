@@ -1,12 +1,13 @@
-package com.example.kotlinproject
+package com.example.kotlinproject.adapters
 
 import android.content.Context
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.kotlinproject.R
+import com.example.kotlinproject.database.MemoEntity
 
 class MemoAdapter(val context : Context, var list : List<MemoEntity>) : RecyclerView.Adapter<MemoAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

@@ -1,4 +1,4 @@
-package com.example.kotlinproject
+package com.example.kotlinproject.adapters
 
 import android.content.Context
 import android.content.Intent
@@ -10,6 +10,8 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.kotlinproject.R
+import com.example.kotlinproject.gamedescription.*
 
 class ProfileAdapter(private val context: Context) : RecyclerView.Adapter<ProfileAdapter.ViewHolder>() {
 

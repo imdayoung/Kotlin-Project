@@ -1,10 +1,13 @@
-package com.example.kotlinproject
+package com.example.kotlinproject.baseactivities
 
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.AsyncTask
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.kotlinproject.R
+import com.example.kotlinproject.database.MemoDatabase
+import com.example.kotlinproject.database.MemoEntity
 import kotlinx.android.synthetic.main.activity_add.*
 
 @SuppressLint("StaticFieldLeak")

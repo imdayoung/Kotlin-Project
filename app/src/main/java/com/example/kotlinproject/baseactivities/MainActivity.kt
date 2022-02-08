@@ -1,8 +1,9 @@
-package com.example.kotlinproject
+package com.example.kotlinproject.baseactivities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Intent
+import com.example.kotlinproject.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

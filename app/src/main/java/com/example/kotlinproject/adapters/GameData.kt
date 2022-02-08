@@ -1,4 +1,4 @@
-package com.example.kotlinproject
+package com.example.kotlinproject.adapters
 
 data class GameData (
     val img : Int,

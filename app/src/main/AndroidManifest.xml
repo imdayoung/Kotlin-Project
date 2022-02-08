@@ -10,31 +10,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinProject">
         <activity
-            android:name=".BangActivity"
+            android:name=".gamedescription.BangActivity"
             android:exported="true" />
         <activity
-            android:name=".SplenderActivity"
+            android:name=".gamedescription.SplenderActivity"
             android:exported="true" />
         <activity
-            android:name=".RummikubActivity"
+            android:name=".gamedescription.RummikubActivity"
             android:exported="true" />
         <activity
-            android:name=".DavinchcodeActivity"
+            android:name=".gamedescription.DavinchcodeActivity"
             android:exported="true" />
         <activity
-            android:name=".AddActivity"
+            android:name=".baseactivities.AddActivity"
             android:exported="true" />
         <activity
-            android:name=".MemoActivity"
+            android:name=".baseactivities.MemoActivity"
             android:exported="true" />
         <activity
-            android:name=".HalligalliActivity"
+            android:name=".gamedescription.HalligalliActivity"
             android:exported="true" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".baseactivities.HomeActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".baseactivities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

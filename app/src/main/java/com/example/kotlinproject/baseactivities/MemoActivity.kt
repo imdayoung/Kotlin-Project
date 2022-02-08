@@ -1,10 +1,12 @@
-package com.example.kotlinproject
+package com.example.kotlinproject.baseactivities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import kotlinx.android.synthetic.main.activity_home.*
+import com.example.kotlinproject.R
+import com.example.kotlinproject.adapters.MemoAdapter
+import com.example.kotlinproject.database.MemoEntity
 import kotlinx.android.synthetic.main.activity_memo.*
 
 class MemoActivity : AppCompatActivity() {

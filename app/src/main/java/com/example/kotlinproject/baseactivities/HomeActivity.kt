@@ -1,8 +1,11 @@
-package com.example.kotlinproject
+package com.example.kotlinproject.baseactivities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.kotlinproject.R
+import com.example.kotlinproject.adapters.GameData
+import com.example.kotlinproject.adapters.ProfileAdapter
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {
@@ -26,11 +29,11 @@ class HomeActivity : AppCompatActivity() {
         homeRecycler.adapter = gameAdapter
 
         datas.apply {
-            add(GameData(img=R.drawable.halligalli, name="할리갈리", people="2~7명", time="15분"))
-            add(GameData(img=R.drawable.davinchcode, name="다빈치코드", people="2~4명", time="15분"))
-            add(GameData(img=R.drawable.rummikub, name="루미큐브", people="2~4명", time="20분"))
-            add(GameData(img=R.drawable.splender, name="스플렌더", people="2~4명", time="30분"))
-            add(GameData(img=R.drawable.bang, name="뱅!", people="4~7명", time="20분"))
+            add(GameData(img= R.drawable.halligalli, name="할리갈리", people="2~7명", time="15분"))
+            add(GameData(img= R.drawable.davinchcode, name="다빈치코드", people="2~4명", time="15분"))
+            add(GameData(img= R.drawable.rummikub, name="루미큐브", people="2~4명", time="20분"))
+            add(GameData(img= R.drawable.splender, name="스플렌더", people="2~4명", time="30분"))
+            add(GameData(img= R.drawable.bang, name="뱅!", people="4~7명", time="20분"))
 
             gameAdapter.datas = datas
             gameAdapter.notifyDataSetChanged()

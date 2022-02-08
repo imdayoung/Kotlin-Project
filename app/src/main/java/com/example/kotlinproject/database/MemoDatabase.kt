@@ -1,4 +1,4 @@
-package com.example.kotlinproject
+package com.example.kotlinproject.database
 
 import android.content.Context
 import androidx.room.Database
