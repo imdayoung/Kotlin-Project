@@ -2,11 +2,9 @@ package com.example.kotlinproject
 
 import android.content.Context
 import android.content.Intent
-import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.ContextCompat
@@ -16,6 +14,7 @@ import com.bumptech.glide.Glide
 class ProfileAdapter(private val context: Context) : RecyclerView.Adapter<ProfileAdapter.ViewHolder>() {
 
     var datas = mutableListOf<GameData>()
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(context).inflate(R.layout.recycler_home,parent,false)
@@ -28,8 +27,28 @@ class ProfileAdapter(private val context: Context) : RecyclerView.Adapter<Profil
         holder.bind(datas[position])
 
         holder.itemView.setOnClickListener {
-            val intent = Intent(holder.itemView?.context, HalligalliActivity::class.java)
-            ContextCompat.startActivity(holder.itemView.context, intent, null)
+            when(position){
+                0 -> {
+                    val goIntent = Intent(holder.itemView?.context, HalligalliActivity::class.java)
+                    ContextCompat.startActivity(holder.itemView.context, goIntent, null)
+                }
+                1 -> {
+                    val goIntent = Intent(holder.itemView?.context, DavinchcodeActivity::class.java)
+                    ContextCompat.startActivity(holder.itemView.context, goIntent, null)
+                }
+                2 -> {
+                    val goIntent = Intent(holder.itemView?.context, RummikubActivity::class.java)
+                    ContextCompat.startActivity(holder.itemView.context, goIntent, null)
+                }
+                3 -> {
+                    val goIntent = Intent(holder.itemView?.context, SplenderActivity::class.java)
+                    ContextCompat.startActivity(holder.itemView.context, goIntent, null)
+                }
+                4 -> {
+                    val goIntent = Intent(holder.itemView?.context, BangActivity::class.java)
+                    ContextCompat.startActivity(holder.itemView.context, goIntent, null)
+                }
+            }
         }
     }
 

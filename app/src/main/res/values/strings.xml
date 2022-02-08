@@ -6,4 +6,6 @@
     <string name="hintevaluate">총평</string>
     <string name="hintshortmemo">메모</string>
     <string name="addtitle">후기 추가하기</string>
+    <string name="account">나의 후기</string>
+    <string name="tohome">홈으로</string>
 </resources>

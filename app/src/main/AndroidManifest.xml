@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinProject">
         <activity
+            android:name=".BangActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SplenderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RummikubActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DavinchcodeActivity"
+            android:exported="true" />
+        <activity
             android:name=".AddActivity"
             android:exported="true" />
         <activity

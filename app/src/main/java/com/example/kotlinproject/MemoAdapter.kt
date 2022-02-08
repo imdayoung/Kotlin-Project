@@ -1,12 +1,11 @@
 package com.example.kotlinproject
 
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 
 class MemoAdapter(val context : Context, var list : List<MemoEntity>) : RecyclerView.Adapter<MemoAdapter.ViewHolder>() {
@@ -26,7 +25,7 @@ class MemoAdapter(val context : Context, var list : List<MemoEntity>) : Recycler
         holder.txtShortmemo.text = memo.memo
     }
 
-    inner class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
+    inner class ViewHolder(view : View) : RecyclerView.ViewHolder(view){
         val txtEvaluate : TextView = itemView.findViewById(R.id.text_evaluate)
         val txtGamename : TextView = itemView.findViewById(R.id.text_gamename)
         val txtShortmemo : TextView = itemView.findViewById(R.id.text_shortmemo)

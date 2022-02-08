@@ -9,23 +9,26 @@ import kotlinx.android.synthetic.main.activity_add.*
 
 @SuppressLint("StaticFieldLeak")
 class AddActivity : AppCompatActivity() {
-    lateinit var db : MemoDatabase
-    var memoList : List<MemoEntity> = listOf<MemoEntity>()
+    lateinit var db: MemoDatabase
+    var memoList: List<MemoEntity> = listOf<MemoEntity>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add)
 
         button_add.setOnClickListener {
-            val memo = MemoEntity(edittext_gamename.text.toString(), edittext_evaluate.text.toString(), edittext_shortmemo.text.toString())
+            val memo = MemoEntity(
+                edittext_evaluate.text.toString(),
+                edittext_gamename.text.toString(),
+                edittext_shortmemo.text.toString()
+            )
             insertMemo(memo)
         }
         db = MemoDatabase.getInstance(this)!!
-
     }
 
-    fun insertMemo(memo : MemoEntity){
-        val insertTask = object : AsyncTask<Unit, Unit, Unit>(){
+    fun insertMemo(memo: MemoEntity) {
+        val insertTask = object : AsyncTask<Unit, Unit, Unit>() {
             override fun doInBackground(vararg params: Unit?) {
                 db.memoDAO().insert(memo)
             }
@@ -35,13 +38,12 @@ class AddActivity : AppCompatActivity() {
                 getAllMemos()
             }
         }
-
         insertTask.execute()
     }
 
-    fun getAllMemos(){
+    fun getAllMemos() {
         val goIntent3 = Intent(this, MemoActivity::class.java)
-        val getTask = object : AsyncTask<Unit,Unit,Unit>(){
+        val getTask: AsyncTask<Unit, Unit, Unit> = (object : AsyncTask<Unit, Unit, Unit>() {
             override fun doInBackground(vararg params: Unit?) {
                 memoList = db.memoDAO().getAll()
             }
@@ -50,7 +52,7 @@ class AddActivity : AppCompatActivity() {
                 super.onPostExecute(result)
                 startActivity(goIntent3)
             }
-        }.execute()
+        })
+        getTask.execute()
     }
-
 }
