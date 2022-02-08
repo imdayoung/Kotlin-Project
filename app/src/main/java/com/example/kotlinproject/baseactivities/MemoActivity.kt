@@ -1,15 +1,19 @@
 package com.example.kotlinproject.baseactivities
 
+import android.annotation.SuppressLint
 import android.content.Intent
+import android.os.AsyncTask
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.kotlinproject.R
 import com.example.kotlinproject.adapters.MemoAdapter
+import com.example.kotlinproject.database.MemoDatabase
 import com.example.kotlinproject.database.MemoEntity
 import kotlinx.android.synthetic.main.activity_memo.*
 
 class MemoActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_memo)

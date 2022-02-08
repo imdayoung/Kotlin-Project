@@ -5,10 +5,13 @@ import android.content.Intent
 import android.os.AsyncTask
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.kotlinproject.R
+import com.example.kotlinproject.adapters.MemoAdapter
 import com.example.kotlinproject.database.MemoDatabase
 import com.example.kotlinproject.database.MemoEntity
 import kotlinx.android.synthetic.main.activity_add.*
+import kotlinx.android.synthetic.main.activity_memo.*
 
 @SuppressLint("StaticFieldLeak")
 class AddActivity : AppCompatActivity() {
@@ -19,6 +22,8 @@ class AddActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add)
 
+        db = MemoDatabase.getInstance(this)!!
+
         button_add.setOnClickListener {
             val memo = MemoEntity(
                 edittext_evaluate.text.toString(),
@@ -27,7 +32,6 @@ class AddActivity : AppCompatActivity() {
             )
             insertMemo(memo)
         }
-        db = MemoDatabase.getInstance(this)!!
     }
 
     fun insertMemo(memo: MemoEntity) {

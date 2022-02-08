@@ -11,15 +11,19 @@
         android:theme="@style/Theme.KotlinProject">
         <activity
             android:name=".gamedescription.SplenderActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true" />
         <activity
             android:name=".gamedescription.BangActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true" />
         <activity
             android:name=".gamedescription.RummikubActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true" />
         <activity
             android:name=".gamedescription.DavinchcodeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true" />
         <activity
             android:name=".baseactivities.AddActivity"
@@ -29,6 +33,7 @@
             android:exported="true" />
         <activity
             android:name=".gamedescription.HalligalliActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true" />
         <activity
             android:name=".baseactivities.HomeActivity"
