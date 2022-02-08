@@ -43,7 +43,7 @@ class ProfileAdapter(private val context: Context) : RecyclerView.Adapter<Profil
                     ContextCompat.startActivity(holder.itemView.context, goIntent, null)
                 }
                 3 -> {
-                    val goIntent = Intent(holder.itemView?.context, SplenderActivity::class.java)
+                    val goIntent = Intent(holder.itemView?.context, BangActivity::class.java)
                     ContextCompat.startActivity(holder.itemView.context, goIntent, null)
                 }
                 4 -> {

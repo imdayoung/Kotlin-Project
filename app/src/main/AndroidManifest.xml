@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.kotlinproject">
+    package="com.example.kotlinproject" >
 
     <application
         android:allowBackup="true"
@@ -8,12 +8,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.KotlinProject">
+        android:theme="@style/Theme.KotlinProject" >
         <activity
             android:name=".gamedescription.BangActivity"
-            android:exported="true" />
-        <activity
-            android:name=".gamedescription.SplenderActivity"
             android:exported="true" />
         <activity
             android:name=".gamedescription.RummikubActivity"
@@ -35,7 +32,7 @@
             android:exported="true" />
         <activity
             android:name=".baseactivities.MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
