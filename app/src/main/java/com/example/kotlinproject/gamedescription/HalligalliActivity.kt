@@ -12,13 +12,12 @@ import kotlinx.android.synthetic.main.activity_halligalli.*
 import android.widget.VideoView
 
 class HalligalliActivity : AppCompatActivity() {
-    //var VIDEO_PATH = "android.resource://"+packageName+R.raw.halligalli
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_halligalli)
-/*
-        val v:VideoView = findViewById(R.id.videoview)
-        v.setVideoPath(VIDEO_PATH)
+
+        val v:VideoView = findViewById(R.id.videohalligalli)
+        v.setVideoPath("android.resource://com.example.kotlinproject/"+R.raw.halligalli)
         v.start()
         v.setOnPreparedListener{
             m: MediaPlayer ->
@@ -26,9 +25,10 @@ class HalligalliActivity : AppCompatActivity() {
                 m: MediaPlayer?, width: Int, height: Int ->
                 val mediaController = MediaController(this)
                 v.setMediaController(mediaController)
+                mediaController.setAnchorView(v)
             }
         }
-*/
+
         val goIntent = Intent(this, HomeActivity::class.java)
 
         button_back.setOnClickListener {
