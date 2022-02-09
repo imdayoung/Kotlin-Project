@@ -10,9 +10,9 @@
 RecyclerView를 사용하여 보드게임의 종류와 간단한 설명을 보여주는 페이지를 구성했다. 상단 나의 후기 버튼을 클릭하면 4. 후기 화면으로 넘어가고, item을 선택하면 각 item에 해당하는 보드게임의 3. 게임 설명 페이지로 넘어간다.
 
 ### 3. 게임 설명 페이지
-![KakaoTalk_20220209_015436426](https://user-images.githubusercontent.com/86220363/153037200-b8d45913-8f9b-4612-a180-fe5dda8ea612.png) ![KakaoTalk_20220209_015440334](https://user-images.githubusercontent.com/86220363/153037207-41dbc46a-04be-4f5a-b4c1-8bf8bcac2d50.png)
+![화면 캡처 2022-02-10 020542](https://user-images.githubusercontent.com/86220363/153252220-462a1df8-5b78-4a2d-8aee-de8e7a2fa4eb.png) ![화면 캡처 2022-02-10 015849](https://user-images.githubusercontent.com/86220363/153252228-0cc1eb6e-017a-4759-a8ed-8d3e6e246695.png)
 
-해당 페이지에 각 보드게임 설명 비디오를 첨부할 계획이었는데, VideoView를 제대로 구현하지 못하여 ScrollView을 사용하여 사진과 글로 설명을 하는 페이지를 구성했다. 상단 홈으로 버튼을 클릭하여 홈 화면으로 이동할 수 있다.
+ScrollView을 사용하여 영상, 사진, 글로 보드게임 설명을 하는 페이지를 구성했다. 상단 홈으로 버튼을 클릭하여 홈 화면으로 이동할 수 있다.
 
 ### 4. 후기 화면
 ![KakaoTalk_20220209_015444069](https://user-images.githubusercontent.com/86220363/153037223-4febda13-639a-430f-92ba-bf19b5e939dd.png)
